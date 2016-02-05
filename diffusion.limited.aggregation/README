@@ -1,0 +1,22 @@
+ Program to simulate a Diffusion limited aggregation (DLA)
+ source: http://paulbourke.net/fractals/dla/
+
+ Input file format:
+-------
+ No of particles
+ Size of matrix
+ No of stickiness parameters
+ Stickiniess parameter 1
+ Stickiniess parameter 2
+ ...
+
+ Output:
+--------
+ !) Matrix with integers 1 or 0. Output is ASCII text file
+    File name - fort.3?
+ 2) Vector with estimate of stickiness parameter along with vectors used for calculating the estimate.
+    File name - fort.10
+
+ gnuplot (http://www.gnuplot.info/) will be used to visualize the binary output file.
+ > plot 'fort.3?' matrix with image
+
